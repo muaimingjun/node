@@ -24,7 +24,11 @@ sudo chmod a+rw /var/run/docker.sock
 
 ##  docker 容器
 
-###  
+###  one-api
+
+```bash 
+docker run --name one-api -d --restart always -p 9008:3000 -e TZ=Asia/Shanghai -v ./data:/data justsong/one-api
+```
 
 ### ollama 容器
 
